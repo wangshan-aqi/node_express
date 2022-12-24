@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "cross-env NODE_ENV=dev node ./bin/www",
-    "test": "cross-env NODE_ENV=test node ./bin/www",
-    "preview": "cross-env NODE_ENV=preview node ./bin/www",
-    "product": "cross-env NODE_ENV=product node ./bin/www"
+    "start": "cross-env NODE_ENV=dev nodemon ./bin/www",
+    "test": "cross-env NODE_ENV=test nodemon ./bin/www",
+    "preview": "cross-env NODE_ENV=preview nodemon ./bin/www",
+    "product": "cross-env NODE_ENV=product nodemon ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -14,7 +14,9 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "mysql": "^2.18.1",
+    "sequelize": "^6.28.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3"
